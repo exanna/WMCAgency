@@ -5,6 +5,10 @@
   align-items: center;
   padding: 80px;
 
+  @media (max-width: 1024px) {
+    padding: 20px;
+  }
+
   &__description {
     padding-top: 250px;
     flex-basis: 40%;
@@ -27,6 +31,7 @@
   &__navigation {
     background-image: url("../../images/laptop.png");
     @include cover-background;
+    background-size: contain;
     flex-basis: 60%;
     height: 100%;
     position: relative;
