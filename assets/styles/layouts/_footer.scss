@@ -11,6 +11,12 @@
     padding: 50px;
     justify-content: center;
 
+    @media (max-width: 320px) {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+
     .tile {
       margin: 0 50px;
       display: flex;
@@ -23,10 +29,18 @@
         font-size: 20px;
         margin-top: 20px;
         margin-bottom: 20px;
+
+        @media (max-width: 320px) {
+          font-size: 12px;
+        }
       }
 
       &__info {
         font-size: 20px;
+
+        @media (max-width: 320px) {
+          font-size: 10px;
+        }
 
         a {
           display: block;
@@ -36,6 +50,12 @@
       &__icon {
         width: 50px;
         height: 50px;
+
+        @media (max-width: 320px) {
+          width: 30px;
+          height: 30px;
+          margin-top: 20px;
+        }
       }
     }
   }
