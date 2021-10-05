@@ -1,0 +1,19 @@
+.button {
+  width: 198px;
+  height: 60px;
+  background-color: white;
+  border: 3px solid #000;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.news__button {
+  border: 0;
+}

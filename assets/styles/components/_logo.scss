@@ -1,0 +1,12 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__title {
+    padding-left: 10px;
+  }
+
+  &--header {
+    filter: brightness(0) invert(1);
+  }
+}

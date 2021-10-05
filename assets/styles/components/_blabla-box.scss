@@ -1,0 +1,18 @@
+.blabla-box {
+  p {
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      width: 3px;
+      height: 129px;
+      background-color: black;
+    }
+  }
+}

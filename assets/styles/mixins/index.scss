@@ -3,3 +3,15 @@
   $remSize: $size / 16;
   @return #{$remSize}rem;
 }
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin cover-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

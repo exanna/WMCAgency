@@ -1,0 +1,38 @@
+.reference {
+  margin-top: 150px;
+  &__content {
+    margin-top: 200px;
+    display: flex;
+    align-items: center;
+  }
+
+  .blabla-box {
+    padding-left: 220px;
+  }
+
+  &__description-box {
+    background-color: #f1f1f1;
+    padding: 100px 100px 100px 320px;
+    flex-basis: 50%;
+  }
+
+  &__photo {
+    flex-basis: 45%;
+    background-image: url("../../images/mockup_mio.png");
+    height: 679px;
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    font-size: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__info {
+    font-size: 15px;
+    line-height: 1.6;
+    font-weight: 300;
+    margin-top: 17px;
+  }
+}

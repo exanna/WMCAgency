@@ -1,0 +1,54 @@
+.pim {
+  margin-top: -200px;
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  padding: 80px;
+
+  &__description {
+    padding-top: 250px;
+    flex-basis: 40%;
+    padding-left: 140px;
+
+    .title {
+      font-size: 35px;
+      line-height: 1.5;
+    }
+
+    .subtitle {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-top: 8px;
+      margin-bottom: 21px;
+    }
+  }
+
+  &__navigation {
+    background-image: url("../../images/laptop.png");
+    @include cover-background;
+    flex-basis: 60%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__navigation-container {
+    position: absolute;
+    right: 50px;
+    top: 250px;
+    display: flex;
+  }
+
+  &__navigation-item {
+    margin-left: 20px;
+  }
+
+  &__navigation-link {
+    font-weight: 600;
+    font-size: 20px;
+    &--active {
+      text-decoration: underline;
+    }
+  }
+}

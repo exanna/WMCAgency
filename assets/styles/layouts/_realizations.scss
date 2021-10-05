@@ -1,0 +1,33 @@
+.realizations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 90px minmax(200px, auto);
+  grid-gap: 10px;
+}
+
+.photo--bottom-left {
+  position: relative;
+  height: 512px;
+  background-image: url("../../images/brian-babb.png");
+  @include cover-background;
+
+  .subtitle,
+  .title,
+  .info {
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+  }
+
+  .title {
+    top: 50%;
+  }
+
+  .info {
+    top: 70%;
+  }
+}
